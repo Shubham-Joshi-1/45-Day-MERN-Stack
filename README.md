@@ -5,3 +5,5 @@
 ## Day 2 Styling the Business card
 
 ## Day 3 Calculator in JS
+
+## Day 4 Higher Order Array Functions
