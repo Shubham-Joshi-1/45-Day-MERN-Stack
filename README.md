@@ -7,3 +7,5 @@
 ## Day 3 Calculator in JS
 
 ## Day 4 Higher Order Array Functions
+
+## Day 5 dark mode and counter

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(202, 189, 222);
+        }
+        .container{
+            border: 3px solid black;
+            border-radius: 19px;
+            background-color: rgb(93, 255, 255);
+            width: 430px;
+            height: 220px;
+            box-shadow: 0 10px 25px rgba(21, 16, 16, 0.742);
+        }
+        .counter {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        button {
+            font-size: 20px;
+            margin: 5px;
+            background-color: rgb(162, 112, 209);
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px; 
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.726);
+            }
+
+        .increase {
+            background-color: greenyellow;
+        }
+
+        .decrease {
+            background-color: red;
+        }
+
+        .reset {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>COUNTER</h1>
+        <h1 class="counter">0</h1>
+        <button class="increase">+ increase</button>
+        <button class="decrease">- decrease</button>
+        <button class="reset">reset</button>
+    </div>
+
+
+    <script>
+        let count = 0;
+        const counter = document.querySelector('.counter');
+        const increaseBtn = document.querySelector('.increase');
+        const decreaseBtn = document.querySelector('.decrease');
+        const resetBtn = document.querySelector('.reset');
+
+        increaseBtn.addEventListener('click', () => {
+            count++;
+            counter.textContent = count;
+            counter.style.color = count > 0 ? 'green' : count < 0 ? 'red' : 'black';
+        });
+
+        decreaseBtn.addEventListener('click', () => {
+            count--;
+            counter.textContent = count;
+            counter.style.color = count < 0 ? 'red' : count > 0 ? 'green' : 'black';
+
+        });
+
+        resetBtn.addEventListener('click', () => {
+            count = 0;
+            counter.textContent = count;
+            counter.style.color = 'black';
+        });
+    </script>
+</body>
+
+</html>
