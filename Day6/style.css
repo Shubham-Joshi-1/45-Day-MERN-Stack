@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e7e130c7 0%, #ec8911 100%);
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+#app {
+  background: rgba(221, 71, 231, 0.877);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#quote {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+#author {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+   background: #667eea;
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.346);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button:hover {
+  background: #f3f3f3;
+}
+
+#spinner { font-size: 1.2rem; }
+.error { color: crimson; margin-top: 8px; }
+#quoteBox { margin: 1rem 0; }
+#share button { margin-right: 0.5rem; }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-btn i {
+  font-size: 1.1rem;
+}
+
+.social-btn.twitter {
+  background: #1da1f2;
+}
+.social-btn.twitter:hover {
+  background: #0d8ddb;
+}
+
+.social-btn.linkedin {
+  background: #0077b5;
+}
+.social-btn.linkedin:hover {
+  background: #005983;
+}
+
+.social-btn.whatsapp {
+  background: #25d366;
+}
+.social-btn.whatsapp:hover {
+  background: #1da851;
+}

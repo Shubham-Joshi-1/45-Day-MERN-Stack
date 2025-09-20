@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+  <h2>Random Quote Generator</h2>
+
+  <label for="category">Category:</label>
+  <select id="category">
+    <option value="">All</option>
+    <option value="wisdom">Wisdom</option>
+    <option value="friendship">Friendship</option>
+    <option value="inspirational">Inspirational</option>
+  </select>
+
+  <div id="quoteBox">
+    <p id="quote"></p>
+    <p id="author"></p>
+  </div>
+
+  <div id="spinner" hidden>🔄 Loading...</div>
+  <div id="error" class="error"></div>
+
+  <button id="newQuote">New Quote</button>
+
+  <div class="buttons">
+
+      <div class="share-buttons">
+        <button id="shareTwitter" class="social-btn twitter">
+          <i class="fab fa-twitter"></i> Tweet
+        </button>
+        <button id="shareLinkedIn" class="social-btn linkedin">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </button>
+        <button id="whatsappBtn" class="social-btn whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

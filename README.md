@@ -9,3 +9,5 @@
 ## Day 4 Higher Order Array Functions
 
 ## Day 5 dark mode and counter
+
+## Day 6 Random Quotes Genrator
