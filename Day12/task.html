@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+   <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <div class="form-container">
+            <form id="taskForm">
+                <h2>Create New Task</h2>
+                <input type="text" id="title" placeholder="Task title..." required>
+                <textarea id="description" placeholder="Task description..."></textarea>
+                <select id="priority" required>
+                    <option value="high">High</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <input type="date" id="dueDate" placeholder="Due date">
+                <button type="submit">Create Task</button>
+            </form>
+        </div>
+
+        <div class="posts-section">
+            <h2>All Tasks</h2>
+            <div id="tasks" class="loading">Loading tasks...</div>
+        </div>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+
+</html>
