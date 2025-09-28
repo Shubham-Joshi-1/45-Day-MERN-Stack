@@ -1,0 +1,42 @@
+<!-- i created this ui on day 12  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  <div class="container">
+    <h1>POST YOUR BLOG</h1>
+
+    <div class="form-container">
+      <form id="postForm">
+        <h2 id="formTitle">Create New Post</h2>
+        <input type="hidden" id="editPostId">
+
+        <input type="text" id="title" placeholder="Enter post title..." required>
+        <textarea id="content" placeholder="Write your post content here..." required></textarea>
+        <input type="text" id="author" placeholder="Author name..." required>
+        <input type="text" id="tags" placeholder="Tags (comma separated, e.g., tech, blog, tutorial)">
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="published">
+          <label for="published">Published (uncheck to save as draft)</label>
+        </div>
+
+        <button type="submit" id="submitBtn">Create Post</button>
+        <button type="button" id="cancelBtn" class="btn-cancel" style="display: none;">Cancel Edit</button>
+      </form>
+    </div>
+
+    <div class="posts-section">
+      <h2>All Posts</h2>
+      <div id="posts" class="loading">Loading posts...</div>
+    </div>
+  </div>
+
+  <script src="blog.js"></script>
+</body>
+</html>
