@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to TaskFlow Dashboard</h1>
+
+    <!-- User info -->
+    <div id="user-info"></div>
+
+    <!-- Quick Stats -->
+    <div id="stats-cards" class="cards"></div>
+
+    <!-- My Tasks -->
+    <h2>My Tasks</h2>
+    <div id="my-tasks"></div>
+
+    <!-- Create New Task -->
+    <h2>Create New Task</h2>
+    <form id="taskForm">
+      <input type="text" id="taskTitle" placeholder="Task Title" required><br>
+      <textarea id="taskDescription" placeholder="Task Description" required></textarea><br>
+      <select id="taskPriority" required>
+        <option value="">Select Priority</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="urgent">Urgent</option>
+      </select><br>
+      <input type="date" id="taskDueDate" required><br>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Team Overview -->
+    <h2>Teams</h2>
+    <div id="team-overview"></div>
+
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
